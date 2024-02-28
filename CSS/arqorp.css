@@ -1,22 +1,24 @@
 body,
 .color_grad {
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #434343,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% de la altura del viewport */
+  margin: 0;
 }
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
   margin-top: 126px;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -27,6 +29,7 @@ body,
 .carousel-item {
   height: 32rem;
 }
+
 .circuloserv {
   --fa-border-color: white;
   --fa-border-padding: 0.5em;
@@ -34,6 +37,15 @@ body,
   --fa-border-style: solid;
   --fa-border-width: 0.1em;
 }
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.content {
+  flex: 1;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -59,10 +71,12 @@ body,
   .carousel-inner {
     max-width: 100%;
   }
+
   .carousel-item {
     height: 10rem;
     position: relative;
   }
+
   .carousel-caption {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
@@ -71,20 +85,23 @@ body,
     bottom: 0rem;
     z-index: 10;
   }
+
   .carousel-caption p {
     margin-bottom: 0.75rem;
     font-size: 12px;
     line-height: 1.4;
   }
+
   .carousel-indicators {
     margin-bottom: 0rem;
   }
+
   .carousel-caption h3 {
     font-size: 15px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .carousel-caption {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
@@ -93,18 +110,22 @@ body,
     bottom: 0rem;
     z-index: 10;
   }
+
   .carousel-item {
     height: 17rem;
     position: relative;
   }
+
   .carousel-caption p {
     margin-bottom: 0.75rem;
     font-size: 12px;
     line-height: 1.4;
   }
+
   .carousel-indicators {
     margin-bottom: 0rem;
   }
+
   .carousel-caption h3 {
     font-size: 25px;
   }

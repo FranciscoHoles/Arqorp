@@ -1,0 +1,66 @@
+.galeria--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  grid-gap: 20px;
+}
+.galeria--item {
+  position: relative;
+}
+.galeria--title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+  font-family: Lora-italic;
+}
+
+.galeria--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.container--galeria {
+  margin-top: 126px;
+  max-width: 100%;
+}
+.container--galeria h3 {
+  font-size: 50px;
+  margin-top: 15px;
+  font-family: Lora-italic;
+  letter-spacing: 0.7px;
+}
+.galeria--item:nth-child(4) {
+  grid-column-start: span 2;
+}
+
+@media (max-width: 768px) {
+  .galeria--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 20px;
+  }
+  .galeria--item:nth-child(4) {
+    grid-column-start: span 1;
+  }
+  .galeria--item:nth-child(5) {
+    grid-column-start: span 2;
+  }
+}
+
+@font-face {
+  font-family: "Brush Script MT";
+  src: url(/Fonts/BRUSHSCI.TTF) format("truetype");
+}
+@font-face {
+  font-family: "Lora-italic";
+  src: url(/Fonts/Lora-Italic.ttf) format("truetype");
+}
