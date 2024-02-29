@@ -58,9 +58,9 @@
 
 @font-face {
   font-family: "Brush Script MT";
-  src: url(/Fonts/BRUSHSCI.TTF) format("truetype");
+  src: url(../Fonts/BRUSHSCI.TTF) format("truetype");
 }
 @font-face {
   font-family: "Lora-italic";
-  src: url(/Fonts/Lora-Italic.ttf) format("truetype");
+  src: url(../Fonts/Lora-Italic.ttf) format("truetype");
 }
