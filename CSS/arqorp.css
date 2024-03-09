@@ -23,6 +23,16 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  color: #000000;
+  text-align: right;
+  font-size: 30px;
+}
+.carousel-caption h3 {
+  font-size: 40px;
+}
+.carousel-caption p {
+  font-weight: 400;
+  font-family: sans-serif;
 }
 
 /* Declare heights because of positioning of img element */
@@ -44,6 +54,20 @@ body {
 }
 .content {
   flex: 1;
+}
+.btn {
+  background-color: #414141;
+  color: white;
+}
+.btn:hover {
+  background-color: #717171;
+  color: aliceblue;
+}
+.txt-justify {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 /* RESPONSIVE CSS
@@ -82,14 +106,21 @@ body {
     padding-top: 0.5rem;
     width: auto;
     height: auto;
-    bottom: 0rem;
+    bottom: 1rem;
     z-index: 10;
+  }
+  .txt-justify {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   }
 
   .carousel-caption p {
     margin-bottom: 0.75rem;
     font-size: 12px;
     line-height: 1.4;
+    font-weight: 400;
   }
 
   .carousel-indicators {
@@ -99,6 +130,16 @@ body {
   .carousel-caption h3 {
     font-size: 15px;
   }
+  .btn {
+    background-color: #414141;
+    color: white;
+    width: auto;
+    height: auto;
+  }
+  .btn:hover {
+    background-color: #717171;
+    color: aliceblue;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -107,8 +148,9 @@ body {
     padding-top: 0.5rem;
     width: auto;
     height: auto;
-    bottom: 0rem;
+    bottom: 2rem;
     z-index: 10;
+    text-align: left;
   }
 
   .carousel-item {
@@ -117,9 +159,9 @@ body {
   }
 
   .carousel-caption p {
-    margin-bottom: 0.75rem;
-    font-size: 12px;
-    line-height: 1.4;
+    margin-bottom: 1.75rem;
+    font-size: 22px;
+    font-weight: 450;
   }
 
   .carousel-indicators {
@@ -128,5 +170,25 @@ body {
 
   .carousel-caption h3 {
     font-size: 25px;
+  }
+  .carousel-caption p {
+    font-size: 18px;
+  }
+  .txt-justify {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  }
+
+  .btn {
+    background-color: #414141;
+    color: white;
+    width: auto;
+    height: auto;
+  }
+  .btn:hover {
+    background-color: #717171;
+    color: aliceblue;
   }
 }
